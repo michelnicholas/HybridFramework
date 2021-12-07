@@ -33,4 +33,17 @@ public class DriverUtil {
     }
 
 
+    /*
+    Call this method to ger access to driver object
+    @return WebDriver object
+     */
+    public static WebDriver driver(){
+        if (driver == null){
+            open();
+            return driver;
+        }
+        return driver;
+    }
+
+
 }

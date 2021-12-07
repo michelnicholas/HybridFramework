@@ -24,11 +24,13 @@
         </dependency>
 
         <!-- Web Driver Manager for automation on browsers-->
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.0.2</version>
+            <version>5.0.3</version>
         </dependency>
+
 
         <!-- Extent Report library for creating reports -->
         <dependency>
@@ -50,6 +52,7 @@
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
         </dependency>
+
 
     </dependencies>
 
