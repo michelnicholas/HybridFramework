@@ -31,8 +31,6 @@ public class DriverUtil {
             driver.quit();
         }
     }
-
-
     /*
     Call this method to ger access to driver object
     @return WebDriver object
