@@ -6,7 +6,7 @@
         <listener class-name="utility.TestListener"/>
     </listeners>
 
-    <test name="DialySmokeTestRun">
+    <test name="DailySmokeTestRun">
         <classes>
             <class name="tests.SmokeTest"/>
         </classes>
