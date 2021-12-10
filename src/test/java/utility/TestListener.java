@@ -17,28 +17,38 @@ public class TestListener implements ITestListener {
     private static ExtentSparkReporter spark;
 
 
-    public static ExtentTest step(String message){
-        return extentTest;
-    }
 
+
+    /*
+    Extent Text logging step
+    static method lets us use this method anywhere
+
+     */
     public static ExtentTest step(){
         return extentTest;
     }
 
-
+    /*
+    In the event of starting a Test this method while get the testcase Name of the test case we are
+    running
+     */
     @Override
     public void onTestStart(ITestResult result) {
-        ITestListener.super.onTestStart(result);
+        String testcaseName = result.getMethod().getMethodName();
+        extentTest = extent.createTest(testcaseName);
     }
 
     @Override
     public void onStart(ITestContext context) {
-        ITestListener.super.onStart(context);
+        extent = new ExtentReports();
+        String reportPath = System.getProperty("user.dir") + "/reports/result.html";
+        spark = new ExtentSparkReporter(reportPath);
+        extent.attachReporter(spark);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        ITestListener.super.onTestSuccess(result);
+        extentTest.pass("This TestCase Passed");
     }
 
 
@@ -46,7 +56,6 @@ public class TestListener implements ITestListener {
     and report it thru extent Test
     message back to us that the test has failed
      */
-
     @Override
     public void onTestFailure(ITestResult result) {
         WebDriver driver = DriverUtil.driver();
@@ -57,7 +66,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        ITestListener.super.onTestSkipped(result);
+        extentTest.skip("This Test Case has been Skipped");
     }
 
     @Override
@@ -72,6 +81,6 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-        ITestListener.super.onFinish(context);
+        extent.flush();
     }
 }

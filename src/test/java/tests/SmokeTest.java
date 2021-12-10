@@ -14,6 +14,7 @@ public class SmokeTest extends UITestBase {
         home().open();
         log("Checking to see if the Homepage is Displayed");
         boolean result = home().isPageDisplay();
+        log("Results For SmokeTest");
         Assert.assertTrue(result);
 
     }
