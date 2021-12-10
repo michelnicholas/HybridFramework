@@ -1,5 +1,9 @@
 package base;
 
+import com.github.javafaker.Faker;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import page.Homepage;
@@ -44,6 +48,20 @@ public class UITestBase {
 
     public void log(String message){
         TestListener.step().info(message);
+    }
+
+    public String username(){
+        return new Faker().name().username();
+    }
+
+    public String password(){
+        return new Faker().internet().password();
+    }
+
+    public void logImg(String message){
+        WebDriver driver = DriverUtil.driver();
+        String screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+        TestListener.step().addScreenCaptureFromBase64String(screenshot,message);
     }
 
 

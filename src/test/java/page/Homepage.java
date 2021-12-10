@@ -8,6 +8,7 @@ public class Homepage extends DriverUtil {
 
     private String url = "https://trello.com";
     private By page_banner_text = By.xpath("//h1");
+    private By login_button = By.xpath("//a[text() = 'Log in']");
 
 
     public boolean isPageDisplay(){
@@ -15,7 +16,6 @@ public class Homepage extends DriverUtil {
         WebElement pageBanner = driver().findElement(page_banner_text);
         Boolean isPageBannerDisplayed = pageBanner.isDisplayed();
         return pageBanner.isDisplayed();
-
     }
 
 

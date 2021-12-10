@@ -16,7 +16,6 @@ public class SmokeTest extends UITestBase {
         boolean result = home().isPageDisplay();
         log("Results For SmokeTest");
         Assert.assertTrue(result);
-
     }
 
 
