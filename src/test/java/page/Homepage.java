@@ -18,6 +18,12 @@ public class Homepage extends DriverUtil {
         return pageBanner.isDisplayed();
     }
 
+    public void goToLoginPage(){
+        driver().get(url);
+        WebElement loginButton = driver().findElement(login_button);
+        loginButton.click();
+    }
+
 
 
 
