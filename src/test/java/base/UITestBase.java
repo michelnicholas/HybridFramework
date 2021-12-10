@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import page.Homepage;
+import page.LoginPage;
 import utility.DriverUtil;
 import utility.TestListener;
 
@@ -14,6 +15,7 @@ public class UITestBase {
 
     // create variable for loginPage
     private Homepage home;
+    private LoginPage login;
 
 
     /* Before Method implemented from TestNG to call browser to open
@@ -44,6 +46,14 @@ public class UITestBase {
             return home;
         }
         return home;
+    }
+
+    public LoginPage login(){
+        if(login == null){
+            login = new LoginPage();
+            return login;
+        }
+        return login;
     }
 
     public void log(String message){

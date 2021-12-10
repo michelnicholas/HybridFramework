@@ -18,5 +18,14 @@ public class SmokeTest extends UITestBase {
         Assert.assertTrue(result);
     }
 
+    @Test
+    public void verifyInvalidLoginWillResultError(){
+        home().open();
+        home().goToLoginPage();
+        boolean result1 = login().verifyPageIsDisplayed();
+
+
+    }
+
 
 }
