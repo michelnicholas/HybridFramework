@@ -6,18 +6,18 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-<<<<<<< HEAD
+
 import org.testng.annotations.Test;
-=======
+
 import page.Homepage;
->>>>>>> 9b39e0992cc7508892d91dc5edb9784baab7c54a
+
 import page.LoginPage;
 import utility.DriverUtil;
 import utility.TestListener;
 
 public class UITestBase {
 
-    // create variable for loginPage
+    // create variable for LoginPage and Homepage
     private Homepage home;
     private LoginPage login;
 
@@ -39,12 +39,12 @@ public class UITestBase {
         DriverUtil.close();
     }
 
-<<<<<<< HEAD
+
     @Test
     public void helloWorld(){
         System.out.println("Hello world");
     }
-=======
+
     /*
     The protected access modifier is accessible within the package. However, it can also
      accessible outside the package but through inheritance only.
@@ -86,7 +86,7 @@ public class UITestBase {
 
 
 
->>>>>>> 9b39e0992cc7508892d91dc5edb9784baab7c54a
+
 
 
 

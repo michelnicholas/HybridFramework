@@ -17,7 +17,26 @@ public class LoginPage extends DriverUtil {
         WebElement isDisplay = driver().findElement(page_banner);
         Boolean areWeOnLoginPage = isDisplay.isDisplayed();
         return isDisplay.isDisplayed();
-
     }
+
+    public void enterCredential(String username, String password) throws InterruptedException {
+        driver().wait(2);
+        WebElement emailInput = driver().findElement(email_input);
+        emailInput.sendKeys(username);
+        driver().wait(2);
+        WebElement passwordInput = driver().findElement(password_input);
+        passwordInput.sendKeys(password);
+    }
+
+    public void clickLoginButton(){
+        WebElement loginButton = driver().findElement(login_button);
+        loginButton.click();
+    }
+
+    public boolean verifyErrorMessage(){
+        WebElement errorMessage = driver().findElement(password_error);
+        return errorMessage.isDisplayed();
+    }
+
 
 }
