@@ -7,11 +7,15 @@
 <<<<<<< HEAD
     <list default="true" id="ce751c62-628e-491b-a6df-cac1841538c5" name="Default Changelist" comment="" />
 =======
+<<<<<<< HEAD
+    <list default="true" id="ce751c62-628e-491b-a6df-cac1841538c5" name="Default Changelist" comment="" />
+=======
     <list default="true" id="ce751c62-628e-491b-a6df-cac1841538c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utility/DriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/DriverUtil.java" afterDir="false" />
     </list>
 >>>>>>> 18e480740f9e8e9a9ca55bd9e8de3f386a2f8ca5
+>>>>>>> 02c57069be30cc2aaa497e0166a5eba180a4536d
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
