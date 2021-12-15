@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import utility.DriverUtil;
 
 public class LoginPage extends DriverUtil {
-    private By page_banner = By.xpath("//h1[text() = 'Log in to Trello]");
+    private By page_banner = By.xpath("//h1[text() = 'Log in to Trello']");
     private By email_input = By.id("user");
     private By password_input = By.id("password");
     private By login_button = By.id("login");
