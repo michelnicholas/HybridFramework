@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import page.Homepage;
 
 import page.LoginPage;
+import page.SauceLabs;
 import utility.DriverUtil;
 import utility.TestListener;
 
@@ -20,7 +21,7 @@ public class UITestBase {
     // create variable for LoginPage and Homepage
     private Homepage home;
     private LoginPage login;
-
+    private SauceLabs sauceLabs;
 
     /* Before Method implemented from TestNG to call browser to open
     before all methods
@@ -64,6 +65,14 @@ public class UITestBase {
             return login;
         }
         return login;
+    }
+
+    public SauceLabs sauceLabs(){
+        if (sauceLabs == null){
+            sauceLabs = new SauceLabs();
+            return sauceLabs;
+        }
+        return sauceLabs;
     }
 
     public void log(String message){
