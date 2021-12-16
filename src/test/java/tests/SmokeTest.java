@@ -38,9 +38,10 @@ public class SmokeTest extends UITestBase {
         softAssert.assertTrue(result1);
         softAssert.assertTrue(result2);
         softAssert.assertAll();
-
-
     }
+
+
+
 
 
 }
