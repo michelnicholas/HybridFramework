@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utility.DriverUtil;
 
-public class SauceLabs extends DriverUtil {
+public class SauceDemo extends DriverUtil {
 
     private String url = "https://saucedemo.com";
     public By sauce_demo_header = By.xpath("//div[@id = 'root']//div[@class='login_logo']");
