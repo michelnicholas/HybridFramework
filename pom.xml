@@ -66,7 +66,6 @@
                     <xmlFile>testng.xml</xmlFile>
                 </suiteXmlFiles>
             </configuration>
-
             </plugin>
         </plugins>
     </build>

@@ -2,7 +2,7 @@ package page;
 
 import utility.DriverUtil;
 
-public class SauceLabs extends DriverUtil {
+public class SauceDemo extends DriverUtil {
 
     private String url = "https://saucedemo.com";
 
