@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce751c62-628e-491b-a6df-cac1841538c5" name="Default Changelist" comment="">
-<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/reports/result2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/UITestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/UITestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/SauceLabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/SauceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/UITestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/UITestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/TestListener.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/SauceLabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/SauceLabs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" afterDir="false" />
->>>>>>> d490de8734c6eb04734c3aecc89f74aa0f5750fd
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/SauceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/SauceDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SmokeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SmokeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/TestListener.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.SauceLabs.isHomepageVisible">
+  <component name="RunManager" selected="TestNG.SmokeTest">
     <configuration name="SauceLabs.isHomepageVisible" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testpractice" />
       <extension name="coverage">
@@ -98,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SauceLabs.isHomepageVisible" />
         <item itemvalue="TestNG.SmokeTest" />
+        <item itemvalue="TestNG.SauceLabs.isHomepageVisible" />
         <item itemvalue="TestNG.SmokeTest.verifyInvalidLoginWillResultError" />
       </list>
     </recent_temporary>

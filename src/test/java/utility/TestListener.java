@@ -41,7 +41,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         extent = new ExtentReports();
-        String reportPath = System.getProperty("user.dir") + "/reports/result.html";
+        String reportPath = System.getProperty("user.dir") + "/reports/result2.html";
         spark = new ExtentSparkReporter(reportPath);
         extent.attachReporter(spark);
     }

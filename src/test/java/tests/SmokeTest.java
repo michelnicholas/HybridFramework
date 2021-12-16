@@ -40,6 +40,14 @@ public class SmokeTest extends UITestBase {
         softAssert.assertAll();
     }
 
+    @Test
+    public void isSauceDemoPageDisplayed(){
+        log("Going to Homepage of the application");
+        boolean result2 = sauceLabs().isHomepageVisible();
+        log("Checked to see is Homepage is displayed and active");
+
+        Assert.assertTrue(result2);
+    }
 
 
 
